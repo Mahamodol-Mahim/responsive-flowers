@@ -37,6 +37,23 @@ body{
 .text-orange{
     color: #E95A08;
 }
+.text-size{
+    font-weight: bold;
+    font-size: 3rem;
+}
+.text-size-gray{
+    font-size: 22px;
+}
+.btn-primary{
+    background-color: #E95A08;
+    color: white;
+    width: 270px;
+    height: 50px;
+    font-weight: 600;
+    font-size: 1rem;
+    border: none;
+}
+
 
 
 /* nav styles */
@@ -105,3 +122,42 @@ ul li a{
     height: 350px;
     
 }
+
+
+/* plants card section */
+.plants-card{
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.all-cards{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 210px;
+}
+
+.card-design{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0px;
+    width: 270px;
+    
+}
+.card-description{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    width: 270px;
+    
+}
+.card-description h6,
+.card-description button {
+    margin: 10px; /* remove browser's default margin */
+    
+}
+
