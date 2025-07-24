@@ -7,11 +7,35 @@
     "wdth" 100;
 }
 
+.noto-serif {
+  font-family: "Noto Serif", serif;
+  font-optical-sizing: auto;
+  /* font-weight: <weight>; */
+  font-style: normal;
+  font-size: 65px;
+  font-variation-settings:
+    "wdth" 100;
+}
 
 
+.inter {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-size: 20px;
+  color: rgba(0, 0, 0, 0.5);
+  font-style: normal;
+}
+
+
+body{
+    background-color: rgb(245, 248, 255);
+}
 /* shared style */
 .bd-width{
     width: 1140px;
+}
+.text-orange{
+    color: #E95A08;
 }
 
 
@@ -20,6 +44,8 @@
     display: flex;
     justify-content: center;
     margin-bottom: 120px;
+    margin-left: auto;
+    margin-right: auto;
 }
 .navbar{
     display: flex;
@@ -43,3 +69,39 @@ ul li a{
     text-decoration: none;
 }
 
+
+/* banner styles */
+.banner{
+    display: flex;
+    justify-content: center;
+
+    align-items: flex-end;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 120px;
+    
+}
+.banner-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+.banner-img-div{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+.always{
+    font-size: 50px;
+    font-weight: bold;
+}
+.fresh-flowers{
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.banner-img{
+    width: 570px;
+    height: 350px;
+    
+}
