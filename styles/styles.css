@@ -1,0 +1,45 @@
+.open-sans-ag {
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  color: rgba(37, 36, 50, 1);
+  font-variation-settings:
+    "wdth" 100;
+}
+
+
+
+/* shared style */
+.bd-width{
+    width: 1140px;
+}
+
+
+/* nav styles */
+.nav-header{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 120px;
+}
+.navbar{
+    display: flex;
+    align-items: center;
+
+    justify-content: space-between;
+}
+.nav-img{
+    width: 130px;
+    height: 80px;
+}
+.nav-list{
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+}
+.nav-item{
+    list-style: none;
+}
+ul li a{
+    text-decoration: none;
+}
+
