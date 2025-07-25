@@ -67,7 +67,6 @@ body{
 .navbar{
     display: flex;
     align-items: center;
-
     justify-content: space-between;
 }
 .nav-img{
@@ -137,6 +136,8 @@ ul li a{
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 210px;
+    max-width: 100%;
+    box-sizing: border-box;
 }
 
 .card-design{
@@ -144,7 +145,8 @@ ul li a{
     flex-direction: column;
     align-items: center;
     gap: 0px;
-    width: 270px;
+    width: 100%;
+    box-sizing: border-box;
     
 }
 .card-description{
@@ -152,7 +154,8 @@ ul li a{
     flex-direction: column;
     align-items: center;
     gap: 8px;
-    width: 270px;
+    width: 100%;
+    box-sizing: border-box;
     
 }
 .card-description h6,
@@ -353,4 +356,98 @@ ul li a{
 .icon-img{
     width: 40px;
     height: 40px;
+}
+
+
+/* Responsive Media Query */
+@media screen and (max-width:576px) {
+
+    .bd-width{
+        width: auto;
+
+    }
+    .hide{
+        display: none;
+    }
+    .banner,
+    .flower-plant-lover,
+    .container,
+    .footer-section{
+        flex-direction: column;
+    }
+
+
+    .banner-img-div{
+        order: 1;
+        width: auto;
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-bottom: 30px;
+    }
+    .banner-text{
+        order: 2;
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    .nav-header{
+       
+        display: flex;
+        justify-content: space-between;
+        justify-content: center;
+        align-items: center;
+        margin-top: 40px;
+    }
+    .item-hide{
+        display: none;
+    }
+
+    /* card section */
+    .all-cards {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+
+    .lover-img{
+        width: 100%;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    .corner-icon{
+        display: none;
+    }
+
+    /* container section */
+    .container{
+        width: 100%;
+    }
+
+    .subscription{
+        width: 100%;
+        margin: 0px;
+        text-align: center;
+    }
+    .subscription-title{
+        padding-top: 90px;
+        font-size: 2.2rem;
+    }
+
+    .input-section{
+        width: 100%;
+        padding-bottom: 180px;
+        
+    }
+    #emailInput{
+        margin-left: 10px;
+    }
+
+    #btn-subscribe{
+        margin-right: 10px;
+    }
+
+    .footer-section{
+        gap: 10px;
+        margin-left: 0px;
+    }
+
 }
